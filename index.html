@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Marin Gray</title>
+  <meta name="description" content="Marin Gray">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="container header">
+    <div class="brand dm-serif-text-regular">Marin Gray</div>
+    <nav class="nav">
+      <a href="#projects">Projects</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+      <a href="https://drive.google.com/file/d/1GJiEnxq5fKfNjj1ESnXb0bz9s5DKlWlS/view?usp=sharing" target="_blank" rel="noopener noreferrer">Resume</a>
+    </nav>
+    <div class="header-actions">
+      <button class="mobile-menu-toggle btn">☰</button>
+    </div>
+  </header>
+
+  <div class="hero-bleed">
+    <div class="container">
+      <section class="hero">
+        <div class="intro">
+          <h1>Welcome!</h1>
+          <p>I am a Computer Science Major interested in front-end development and UX Design</p>
+        </div>
+      </section>
+    </div>
+  </div>
+
+    <section id="projects" class="section">
+      <h2>Projects</h2>
+      <div class="grid">
+        <div class="card" data-project data-title="Project Alpha" data-description="A small app demonstrating X" data-link="https://example.com" data-screenshot="https://via.placeholder.com/800x400">
+          <h3>Academica</h3>
+          <p>Web App for creating and comparing college schedules</p>
+          <div class="tags"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">TypeScript</span></div>
+        </div>
+        <div class="card" data-project data-title="Project Beta" data-description="An interactive UI component library" data-link="https://example.com">
+          <h3>RunBuddy</h3>
+          <p>Interactive UI components with accessibility in mind.</p>
+          <div class="tags"><span class="tag">Visual Design Study</span><span class="tag">User Testing</span></div>
+        </div>
+        <div class="card" data-project data-title="Project Gamma" data-description="Static site with clean design" data-link="#">
+          <h3>Project Gamma</h3>
+          <p>Static site template and starter kit.</p>
+          <div class="tags"><span class="tag">Design</span><span class="tag">Templates</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <h2>About</h2>
+      <p style="color:var(--muted)">I build front-end focused web projects, craft UI, and enjoy learning new tools. Available for freelance and collaboration.</p>
+    </section>
+
+  </main>
+
+  <footer class="footer" id="contact">
+    <div class="container" style="display:flex;align-items:center;gap:2rem;justify-content:center;flex-wrap:wrap">
+      <strong>Connect with me!</strong>
+      <span class="social" aria-hidden="false">
+        <a href="https://github.com/mg126e" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile" title="GitHub">
+          <img class="social-img" src="images/github.png" alt="GitHub">
+        </a>
+        <a href="https://www.linkedin.com/in/marin-gray-a9a18630a/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile" title="LinkedIn">
+            <img class="social-img" src="images/linkedin.png" alt="LinkedIn">
+        </a>
+      </span>
+    </div>
+  </footer>
+
+  <script src="scripts.js" defer></script>
+</body>
+</html>
