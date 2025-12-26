@@ -104,7 +104,6 @@
 
   // Init all
   document.addEventListener('DOMContentLoaded',()=>{
-    // Note: theme toggle removed — site uses light mode only
     initNavToggle();
     initModals();
     initFormValidation();
