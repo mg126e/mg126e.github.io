@@ -34,7 +34,7 @@ body{
 .nav{display:flex;gap:3rem;justify-content:flex-end; margin-left: auto}
 .nav a{color:var(--muted);text-decoration:none;padding:.5rem 2rem;border-radius:8px}
 .nav a:hover{color:rgb(59, 59, 59);background:rgba(171, 228, 181, 0.400);}
-.btn{display:inline-flex;align-items:center;gap:0.5rem;padding:0.5rem 0.75rem;border-radius:8px;border:1px solid transparent;background:var(--surface);cursor:pointer}
+.btn{display:inline-flex;align-items:center;gap:0.5rem;padding:0.5rem 0.75rem;border-radius:8px;border:1px solid transparent;background:var(--surface);cursor:pointer;text-decoration:none;color:var(--text)}
 .header-actions{display:flex;gap:0.5rem;align-items:center}
 .mobile-menu-toggle{display:none}
 
