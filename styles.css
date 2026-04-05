@@ -4,8 +4,8 @@
   --surface:#f7f7f8;
   --text:#111217;
   --muted:#5a5f68;
-  --light-green: rgba(223, 255, 229, 0.7);
-  --dark-green: rgba(171, 228, 181, 0.400);
+  --main: #b3d5ae;
+  --secondary: rgba(179, 213, 174, 0.400);
   --card-shadow: 0 6px 18px rgba(16,24,40,0.06);
   --radius:10px;
   --gap:1.25rem;
@@ -51,7 +51,8 @@ body{
 .brand{
   font-family: "DM Serif Text", serif; 
   letter-spacing: 0.1rem;
-  font-weight: 550;
+  font-weight: 570;
+  font-size: 1.3em;
 }
 
 /* nav bar */
@@ -72,14 +73,14 @@ details {
   border-radius:8px;
 }
 .nav a:hover{
-  color:rgb(59, 59, 59);
-  background:rgba(171, 228, 181, 0.400);
+  color:var(--main);
+  background:var(--secondary);
 }
 
 /* Hero */
 .hero-bleed
 {
-  background-color: rgba(171, 228, 181, 0.200);
+  background-color: var(--secondary);
   padding:3rem 0;
 }
 .hero
@@ -156,7 +157,7 @@ details {
   padding:1rem;
   border-radius:12px;cursor:pointer;
   transition:transform .18s ease,box-shadow .18s ease; 
-  background-color: rgba(171, 228, 181, 0.2);
+  background-color: var(--secondary);
   width: 100%;
 }
 .card:hover
@@ -182,7 +183,7 @@ details {
 }
 .tag
 {
-  background:rgba(0,0,0,0.04);
+  background:rgba(0, 0, 0, 0.055);
   padding:0.25rem 0.5rem;
   border-radius:6px;
   font-size:0.8rem;
@@ -203,7 +204,7 @@ details {
 }
 .modal
 {
-  background:var(--light-green);
+  background:var(--main);
   width:clamp(320px,80vw,880px);
   max-height:90vh;
   overflow:auto;
@@ -248,7 +249,7 @@ details {
   margin-top:2rem; 
   text-align:center; 
   font-size:1rem; 
-  background-color: rgba(171, 228, 181, 0.2);
+  background-color: var(--secondary);
 }
 
 /* Social icons */
@@ -355,7 +356,7 @@ details {
     height: 0;
     width: fit-content;
     border-radius: 20px;
-    background-color: var(--dark-green);
+    background-color: var(--main);
     box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.2);
     margin-top: 5px;
 
