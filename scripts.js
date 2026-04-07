@@ -29,12 +29,30 @@
     const closeBtn = overlay.querySelector('.close');
 
     function open(data){
+      const screenshots = Array.isArray(data.screenshots) ? data.screenshots : [];
+
+      const imagesHtml = screenshots.length
+        ? `
+          <div class="modal-gallery">
+            ${screenshots.map((src, i) =>
+              `<img src="${escapeAttr(src)}" alt="${escapeAttr(data.title)} screenshot ${i + 1}">`
+            ).join('')}
+          </div>
+        `
+        : '';
+
+      const hasLink = typeof data.link === 'string' && data.link.trim() !== '';
+      const linkHtml = hasLink
+        ? `<p style="margin-top:0.8rem"><a href="${escapeAttr(data.link)}" target="_blank" rel="noopener noreferrer" class="btn">View Project</a></p>`
+        : '';
+
       body.innerHTML = `
         <h3>${escapeHtml(data.title)}</h3>
-        <p style="color:var(--muted)">${escapeHtml(data.description||'')}</p>
-        ${data.screenshot? `<img src="${escapeAttr(data.screenshot)}" alt="${escapeAttr(data.title)}" style="width:100%;border-radius:8px;margin-top:0.8rem">` : ''}
-        <p style="margin-top:0.8rem"><a href="${escapeAttr(data.link||'#')}" target="_blank" class="btn">View Project</a></p>
+        <p style="color:var(--muted)">${escapeHtml(data.description || '')}</p>
+        ${imagesHtml}
+        ${linkHtml}
       `;
+
       overlay.classList.add('open');
       overlay.querySelector('.modal').focus?.();
     }
@@ -54,8 +72,8 @@
       const data = {
         title: card.dataset.title || 'Project',
         description: card.dataset.description || '',
-        link: card.dataset.link || '#',
-        screenshot: card.dataset.screenshot || ''
+        link: (card.dataset.link || '').trim(),
+        screenshots: (card.dataset.screenshots || '').split(',').map(s => s.trim()).filter(Boolean)
       };
       open(data);
     });
