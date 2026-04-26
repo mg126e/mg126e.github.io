@@ -1,121 +1,202 @@
 <!doctype html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Marin Gray</title>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <header class="container header">
-    <div class="brand dm-serif-text-regular">Marin Gray</div>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Marin Gray</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Serif+Text&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="container header">
+      <div class="brand dm-serif-text-regular">Marin Gray</div>
 
       <nav class="nav">
+        <a href="#projects">Projects</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+        <a
+          href="https://drive.google.com/file/d/1GJiEnxq5fKfNjj1ESnXb0bz9s5DKlWlS/view?usp=sharing"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Resume</a
+        >
+      </nav>
+
+      <details>
+        <summary></summary>
+        <nav id="menu">
           <a href="#projects">Projects</a>
           <a href="#about">About</a>
           <a href="#contact">Contact</a>
-          <a href="https://drive.google.com/file/d/1GJiEnxq5fKfNjj1ESnXb0bz9s5DKlWlS/view?usp=sharing" target="_blank" rel="noopener noreferrer">Resume</a>
-      </nav>
+          <a
+            href="https://drive.google.com/file/d/1GJiEnxq5fKfNjj1ESnXb0bz9s5DKlWlS/view?usp=sharing"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Resume</a
+          >
+        </nav>
+      </details>
+    </header>
 
-
-    <details>
-      <summary></summary>
-      <nav id="menu">
-          <a href="#projects">Projects</a>
-          <a href="#about">About</a>
-          <a href="#contact">Contact</a>
-          <a href="https://drive.google.com/file/d/1GJiEnxq5fKfNjj1ESnXb0bz9s5DKlWlS/view?usp=sharing" target="_blank" rel="noopener noreferrer">Resume</a>
-      </nav>
-    </details>
-  </header>
-
-  <div class="hero-bleed">
-    <div class="container">
-      <section class="hero">
-        <div class="intro">
-          <h1>Welcome!</h1>
-          <p>I am a Computer Science Major interested in front-end development and UX Design</p>
-        </div>
-        <div class="languages"> 
-          <h2>Skills</h2>
-          <p>
-            <span class="tag">HTML</span>
-            <span class="tag">CSS</span>
-            <span class="tag">JavaScript</span>
-            <span class="tag">TypeScript</span>
-            <span class="tag">ReactJS</span>
-          </p>
-          <p>
-            <span class="tag">Python</span>
-            <span class="tag">C</span>
-            <span class="tag">Java</span>
-            <span class="tag">Git</span>
-          </p>
-          <p>
-            <span class="tag">Figma</span>
-            <span class="tag">GitHub</span>
-            <span class="tag">Canva</span>
-            <span class="tag">Bootstrap</span>
-          </p>
-        </div>
-      </section>
+    <div class="hero-bleed">
+      <div class="container">
+        <section class="hero">
+          <div class="intro">
+            <h1>Welcome!</h1>
+            <p>
+              I am a Computer Science Major interested in front-end development
+              and UX Design
+            </p>
+          </div>
+          <div class="languages">
+            <h2>Skills</h2>
+            <p>
+              <span class="tag">HTML</span>
+              <span class="tag">CSS</span>
+              <span class="tag">JavaScript</span>
+              <span class="tag">TypeScript</span>
+              <span class="tag">ReactJS</span>
+            </p>
+            <p>
+              <span class="tag">Python</span>
+              <span class="tag">C</span>
+              <span class="tag">Java</span>
+              <span class="tag">Git</span>
+            </p>
+            <p>
+              <span class="tag">Figma</span>
+              <span class="tag">GitHub</span>
+              <span class="tag">Canva</span>
+              <span class="tag">Bootstrap</span>
+            </p>
+          </div>
+        </section>
+      </div>
     </div>
-  </div>
 
-    <section id="projects" class="section">
-      <h2>Projects</h2>
-      <div class="project-box">
-        
-        <div class="card" data-project data-title="Academica" data-description="I used scrapped data from previous semesters to create a more informed scheduling experience. Students can quickly sort for desired times and subjects and recieve Ai suggestions based off chosen courses in their schedule. After finding the perfect schedule, students can export their course details to google calendar. 
-          Simply create a new schedule or select an existing one to start adding courses."  data-credentials="Take a look at the project using these credentials- u: user101 p: password" data-link="https://academica-xrm1.onrender.com" data-screenshots="images/academica-screenshot.png">
-            <img src="images/academica-screenshot.png" alt="Academica Home Page" style="width:100%;border-radius:8px;margin-bottom:0.75rem">
+    <main>
+      <section id="projects" class="section">
+        <h2>Projects</h2>
+        <div class="project-box">
+          <div
+            class="card"
+            data-project
+            data-title="Academica"
+            data-description="I used scrapped data from previous semesters to create a more informed scheduling experience. Students can quickly sort for desired times and subjects and recieve Ai suggestions based off chosen courses in their schedule. After finding the perfect schedule, students can export their course details to google calendar. 
+          Simply create a new schedule or select an existing one to start adding courses."
+            data-credentials="Take a look at the project using these credentials- u: user101 p: password"
+            data-link="https://academica-xrm1.onrender.com"
+            data-screenshots="images/academica-screenshot.png"
+          >
+            <img
+              src="images/academica-screenshot.png"
+              alt="Academica Home Page"
+              style="width: 100%; border-radius: 8px; margin-bottom: 0.75rem"
+            />
             <h3>Academica</h3>
             <p>Web App for creating and comparing college schedules</p>
-          <div class="tags"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">TypeScript</span><span class="tag">User Testing</span></div>
-        </div>
-        
-        <div class="card" data-project data-title="Quanda" data-description="Course Forum for students to ask and answer questions. Students can create threads, 
-        comment on existing threads, and upvote helpful responses. Students can watch threads for updates and admins can lock threads that are resolved. Take a look at how my initial designs translated into the final product." 
-        data-screenshots="images/quanda1.png,images/quanda2.png">
-          <img src="images/quanda3.png" alt="Quanda" style="width:100%;border-radius:8px;margin-bottom:0.75rem">
-          <h3>Quanda</h3>
-          <p>Course Forum for students to ask and answer questions.</p>
-          <div class="tags"><span class="tag">Visual Design Study</span><span class="tag">SPA</span> <span class="tag">Fully Responsive</span></div>
-        </div>
+            <div class="tags">
+              <span class="tag">HTML</span><span class="tag">CSS</span
+              ><span class="tag">TypeScript</span
+              ><span class="tag">User Testing</span>
+            </div>
+          </div>
 
-         <div class="card" data-project data-title="Presto" data-description="Slides like website to create and display presentations. Users can create presentation compnents by using the side bar and delete them by right clicking. To see their presentations in full screen, users can click the presentation button in the side bar menu." 
-          data-credentials="Take a look at the project using these credentials- u: user101 p: password" data-link="https://5737891-presto-deploy-ecru.vercel.app/" data-screenshots="images/Presto_multi_platform.jpg">
-          <img src="images/Presto_desktop.jpg" alt="Presto on in edit mode on desktop and the dashboard on mobile" style="width:100%;border-radius:8px;margin-bottom:0.75rem">
-          <h3>Presto</h3>
-          <p>Slides like website to create and display presentations.</p>
-          <div class="tags"><span class="tag">ReactJS</span><span class="tag">SPA</span></div>
-        </div>
+          <div
+            class="card"
+            data-project
+            data-title="Quanda"
+            data-description="Course Forum for students to ask and answer questions. Students can create threads, 
+        comment on existing threads, and upvote helpful responses. Students can watch threads for updates and admins can lock threads that are resolved. Take a look at how my initial designs translated into the final product."
+            data-screenshots="images/quanda1.png,images/quanda2.png"
+          >
+            <img
+              src="images/quanda3.png"
+              alt="Quanda"
+              style="width: 100%; border-radius: 8px; margin-bottom: 0.75rem"
+            />
+            <h3>Quanda</h3>
+            <p>Course Forum for students to ask and answer questions.</p>
+            <div class="tags">
+              <span class="tag">Visual Design Study</span
+              ><span class="tag">SPA</span>
+              <span class="tag">Fully Responsive</span>
+            </div>
+          </div>
 
+          <div
+            class="card"
+            data-project
+            data-title="Presto"
+            data-description="Slides like website to create and display presentations. Users can create presentation compnents by using the side bar and delete them by right clicking. To see their presentations in full screen, users can click the presentation button in the side bar menu."
+            data-credentials="Take a look at the project using these credentials- u: user101 p: password"
+            data-link="https://5737891-presto-deploy-ecru.vercel.app/"
+            data-screenshots="images/Presto_multi_platform.jpg"
+          >
+            <img
+              src="images/Presto_desktop.jpg"
+              alt="Presto on in edit mode on desktop and the dashboard on mobile"
+              style="width: 100%; border-radius: 8px; margin-bottom: 0.75rem"
+            />
+            <h3>Presto</h3>
+            <p>Slides like website to create and display presentations.</p>
+            <div class="tags">
+              <span class="tag">ReactJS</span><span class="tag">SPA</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="section">
+        <h2>About</h2>
+        <p style="color: var(--muted)">
+          I am a computer science student at Wellesly College with a passion for
+          intuitive interfaces and user-centered design. When I'm not designing
+          or coding you can find me reading, crocheting, or watching a Studio
+          Ghibli movie.
+        </p>
+      </section>
+    </main>
+
+    <footer class="footer" id="contact">
+      <div
+        class="container"
+        style="
+          display: flex;
+          align-items: center;
+          gap: 0.75rem;
+          justify-content: center;
+          flex-wrap: wrap;
+        "
+      >
+        <strong>Connect with me!</strong>
+        <span class="social" aria-hidden="false">
+          <a
+            href="https://github.com/mg126e"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="GitHub profile"
+            title="GitHub"
+          >
+            <img class="social-img" src="images/github.png" alt="GitHub" />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/marin-gray-a9a18630a/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="LinkedIn profile"
+            title="LinkedIn"
+          >
+            <img class="social-img" src="images/linkedin.png" alt="LinkedIn" />
+          </a>
+        </span>
       </div>
-    </section>
+    </footer>
 
-    <section id="about" class="section">
-      <h2>About</h2>
-      <p style="color:var(--muted)">I am a computer science student at Wellesly College with a passion for intuitive interfaces and user-centered design. When I'm not designing or coding you can find me reading, crocheting, or watching a Studio Ghibli movie.</p>
-    </section>
-
-  </main>
-
-  <footer class="footer" id="contact">
-    <div class="container" style="display:flex;align-items:center;gap:0.75rem;justify-content:center;flex-wrap:wrap">
-      <strong>Connect with me!</strong>
-      <span class="social" aria-hidden="false">
-        <a href="https://github.com/mg126e" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile" title="GitHub">
-          <img class="social-img" src="images/github.png" alt="GitHub">
-        </a>
-        <a href="https://www.linkedin.com/in/marin-gray-a9a18630a/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile" title="LinkedIn">
-            <img class="social-img" src="images/linkedin.png" alt="LinkedIn">
-        </a>
-      </span>
-    </div>
-  </footer>
-
-  <script src="scripts.js" defer></script>
-</body>
+    <script src="scripts.js" defer></script>
+  </body>
 </html>
