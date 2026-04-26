@@ -41,6 +41,10 @@
         `
         : '';
 
+      const credentialsHtml = data.credentials
+    ? `<p style="margin-top:0.8rem;font-size:0.9rem;color:var(--muted)">${escapeHtml(data.credentials)}</p>`
+    : '';
+
       const hasLink = typeof data.link === 'string' && data.link.trim() !== '';
       const linkHtml = hasLink
         ? `<p style="margin-top:0.8rem"><a href="${escapeAttr(data.link)}" target="_blank" rel="noopener noreferrer" class="btn">View Project</a></p>`
@@ -72,6 +76,7 @@
       const data = {
         title: card.dataset.title || 'Project',
         description: card.dataset.description || '',
+        credentials: card.dataset.credentials || '', 
         link: (card.dataset.link || '').trim(),
         screenshots: (card.dataset.screenshots || '').split(',').map(s => s.trim()).filter(Boolean)
       };
