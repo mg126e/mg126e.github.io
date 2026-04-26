@@ -42,7 +42,7 @@
         : '';
 
       const credentialsHtml = data.credentials
-    ? `<p style="margin-top:0.8rem;font-size:0.9rem;color:var(--muted)">${escapeHtml(data.credentials)}</p>`
+    ? `<p style="margin-top:1rem;font-size:1rem;color:var(--text)">${escapeHtml(data.credentials)}</p>`
     : '';
 
       const hasLink = typeof data.link === 'string' && data.link.trim() !== '';
@@ -54,6 +54,7 @@
         <h3>${escapeHtml(data.title)}</h3>
         <p style="color:var(--muted)">${escapeHtml(data.description || '')}</p>
         ${imagesHtml}
+        ${credentialsHtml}
         ${linkHtml}
       `;
 
