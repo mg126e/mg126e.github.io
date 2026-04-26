@@ -97,29 +97,29 @@
     });
   }
 
-  // Simple contact form validation
-  function initFormValidation() {
-    const form = document.querySelector("form[data-contact]");
-    if (!form) return;
-    form.addEventListener("submit", (e) => {
-      const name = form.querySelector('[name="name"]');
-      const email = form.querySelector('[name="email"]');
-      const message = form.querySelector('[name="message"]');
-      let ok = true;
-      [name, email, message].forEach((inp) => {
-        if (!inp) return;
-        inp.style.outline = "";
-        if (!inp.value.trim()) {
-          inp.style.outline = "2px solid rgba(255,0,0,0.12)";
-          ok = false;
-        }
-      });
-      if (!ok) {
-        e.preventDefault();
-        alert("Please fill in all fields.");
-      }
-    });
-  }
+  // // Simple contact form validation
+  // function initFormValidation() {
+  //   const form = document.querySelector("form[data-contact]");
+  //   if (!form) return;
+  //   form.addEventListener("submit", (e) => {
+  //     const name = form.querySelector('[name="name"]');
+  //     const email = form.querySelector('[name="email"]');
+  //     const message = form.querySelector('[name="message"]');
+  //     let ok = true;
+  //     [name, email, message].forEach((inp) => {
+  //       if (!inp) return;
+  //       inp.style.outline = "";
+  //       if (!inp.value.trim()) {
+  //         inp.style.outline = "2px solid rgba(255,0,0,0.12)";
+  //         ok = false;
+  //       }
+  //     });
+  //     if (!ok) {
+  //       e.preventDefault();
+  //       alert("Please fill in all fields.");
+  //     }
+  //   });
+  // }
 
   // Utility: escape HTML to avoid injection when injecting content
   function escapeHtml(str) {
